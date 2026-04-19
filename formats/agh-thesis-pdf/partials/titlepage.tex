@@ -1,0 +1,45 @@
+\thispagestyle{empty}
+
+\begin{center}
+\includegraphics[width=\textwidth]{${logo}}\\
+
+{\bf{\sf ${faculty}}}\\[5mm]
+{\bf{\sf ${department}}}\\[14mm]
+
+{\sf{\huge ${thesis-type}}}\\[12mm]
+
+{\sf{\Large
+$if(lang)$
+  $if(lang)$
+    $if(lang == "pl")$
+      ${title-pl}\\[2mm]
+      ${title-en}
+    $elseif(lang == "en")$
+      ${title-en}\\[2mm]
+      ${title-pl}
+    $else$
+      ${title-original}\\[2mm]
+      ${title-pl}\\[2mm]
+      ${title-en}
+    $endif$
+  $endif$
+$else$
+  ${title-original}
+$endif$
+}}\\[40mm]
+
+\end{center}
+
+{\sf
+\begin{tabular}{ll}
+Autor: & ${author}\\
+Kierunek studiów: & ${program}\\
+Opiekun pracy: & ${advisor}\\
+\end{tabular}
+}\\[10mm]
+
+\begin{center}
+{\sf Kraków, \the\year}
+\end{center}
+
+\newpage
