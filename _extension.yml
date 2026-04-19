@@ -5,8 +5,11 @@ quarto-required: ">=1.4.0"
 
 resources:
   - formats/agh-thesis-pdf/logo_AGH.pdf
+  - formats/agh-thesis-pdf/partials
 
 contributes:
   formats:
     pdf:
-      format: formats/agh-thesis-pdf/format.yml
+      template: formats/agh-thesis-pdf/template.qmd
+      format-resources:
+        - logo_AGH.pdf
