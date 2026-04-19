@@ -3,7 +3,7 @@
 There are three alternative ways to use this template:
   - set it up in an existing Quarto project, execute `quarto add habemus-python/quarto-agh-thesis`.
   - start a new blank project, execute `quarto use template habemus-python/quarto-agh-thesis`.
-  - start a new git repo based on a teamplate repo (TODO)
+  - start a new git repo based on a template repo (TODO)
 
 To render it to a pdf, do: `quarto render thesis.ipynb --execute`.
 
