@@ -27,3 +27,6 @@ contributes:
 
       format-resources:
         - logo_AGH.pdf
+
+      variables:
+        - logo: logo_AGH.pdf
