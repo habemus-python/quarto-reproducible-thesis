@@ -23,7 +23,7 @@ contributes:
         \usepackage{graphicx}
 
       template-partials:
-        - "partials/title.tex"
+        - "partials/before-body.tex"
 
       format-resources:
         - logo_AGH.pdf
