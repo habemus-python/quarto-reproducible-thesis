@@ -2,8 +2,12 @@ format:
   pdf:
     documentclass: report
     papersize: A4
-    fontsize: 11pt
-
+    fontsize: 12pt
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    bibliography: refs.bib
+    cite-method: biblatex
     include-in-header:
       - text: |
           \usepackage{polski}
