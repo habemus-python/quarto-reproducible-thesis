@@ -14,5 +14,5 @@ format:
           \usepackage[utf8]{inputenc}
           \usepackage[margin=3.5cm]{geometry}
           \usepackage{graphicx}
-
+    logo-path: "logo_AGH.pdf"
     include-before-body: partials/titlepage.tex
