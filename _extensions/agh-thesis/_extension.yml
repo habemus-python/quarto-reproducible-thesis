@@ -21,12 +21,16 @@ contributes:
         - style=authoryear
       bibliography: refs.bib
 
+      linkcolor: black
+      urlcolor: black
+      citecolor: black
+      colorlinks: true
+
       header-includes: |
         \usepackage{polski}
         \usepackage[utf8]{inputenc}
         \usepackage[margin=3.5cm]{geometry}
         \usepackage{graphicx}
-        \usepackage[colorlinks=true,allcolors=black]{hyperref}
 
       template-partials:
         - "partials/before-body.tex"
