@@ -46,7 +46,7 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y textlive-luatex librsvg2-bin biber texlive-bibtex-extra
+          sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra
 
       - name: Install rsvg (macOS)
         if: runner.os == 'macOS'
