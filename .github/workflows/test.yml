@@ -40,7 +40,7 @@ jobs:
 
       - name: Install LaTeX packages (incl. biber)
         run: |
-          tlmgr install biblatex biber
+          #tlmgr install biblatex biber
 
       - name: Install rsvg (Linux)
         if: runner.os == 'Linux'
