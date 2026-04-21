@@ -60,7 +60,9 @@ jobs:
 
       - name: Test template installation
         run: |
-          quarto use template . --dir test-project --no-prompt
+          mkdir test-project 
+          cd test-project
+          quarto use template .. --no-prompt
 
       - name: Render example notebook to PDF
         run: |
