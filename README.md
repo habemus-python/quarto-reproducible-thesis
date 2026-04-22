@@ -1,4 +1,4 @@
-# 🎓 Quarto template for reproducible AGH BEng/MSc theses using Python
+# 🎓 Quarto template for reproducible AGH BEng/MSc theses using Python 🐍
 
 This template aims to (by design!):
 - 📦 encapsulate all components of a BEng/MSc thesis into a single Jupyter/Python notebook,
