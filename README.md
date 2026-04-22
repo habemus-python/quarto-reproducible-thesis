@@ -31,7 +31,7 @@ With the [default notebook unchanged](https://github.com/habemus-python/quarto-a
 
 To get information on how to install Quarto, [read the friendly manual](https://quarto.org/docs/get-started/).
 
-Note: the template requires `quarto` to be executed in an environment with the following tools available (in `$PATH`):
+The template requires `quarto` to be executed in an environment with the following tools available (in `$PATH`):
 - [Jupyter](https://jupyter.org/) and some common Python packages:
    * using `pip`: `pip install jupyter matplotlib pyyaml nbformat nbclient`
    * on Debian/Ubuntu using APT: `apt-get install jupyter python3-matplotlib python3-yaml`
@@ -53,7 +53,7 @@ The above installation steps are tested on CI with [this workflow](https://githu
 
 ## 📚 Further reading
 
-In English:
+🇬🇧In English:
 - [Software Carpentry](https://software-carpentry.org/) lessons on: 
   * [The Unix Shell](https://swcarpentry.github.io/shell-novice/),
   * [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/),
@@ -71,7 +71,7 @@ In English:
 - [Quarto template docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
   (to learn more about using, tuning and developing Quarto templates).
 
-In Polish:
+🇵🇱 In Polish:
 - [Jak przygotowywać i prezentować prace dyplomowe inżynierskie i magisterskie](https://www.fis.agh.edu.pl/home/wfiis/wfiis/import/Wzory_dokumentow/thesis.pdf) by Andrzej Lenda (fis.agh.edu.pl),
 - [Wymagania stawiane pracom magisterskim i licencjackim](https://www.fuw.edu.pl/tl_files/studia/dyplomy/wymagania_prac_mag_lic.pdf) from fuw.edu.pl,
 - [MWCLS: podręcznik użytkownika polskich klas dokumentów LaTeXa](https://ctan.math.illinois.edu/macros/latex/contrib/mwcls/mwclsdoc.pdf) by Marcin Woliński (uw.edu.pl).
