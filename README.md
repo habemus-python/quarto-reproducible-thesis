@@ -1,17 +1,21 @@
 # Quarto template for AGH BEng/MSc theses
 
 This template aims to:
-- encapsulate all components of a BEng/MSc thesis into a single Jupyter/Python notebook,
-- ensure code-generated plots are in-sync with the code,
-- enforce vector graphics for matplotlib plots,
-- provide clickable references - with links from the text to the bibliography, as well as from the bibliography to the citing locations,
-- offer code listings with syntax-highlighting,
-- handle correctly multi-lingual content (Polish letters, etc),
-- provide reasonable defaults for line spacing, font sizes, margins, etc.
+- 📦 encapsulate all components of a BEng/MSc thesis into a single Jupyter/Python notebook,
+- 🔄 provide automation ensuring code-generated plots are in-sync with the code,
+- 📈 enforce vector graphics for matplotlib plots,
+- 🔗 provide clickable references - with links from the text to the bibliography, as well as from the bibliography to the citing locations,
+- 💻 offer code listings with syntax-highlighting,
+- 🌍 handle correctly multi-lingual content (Polish letters, etc),
+- 📐 provide reasonable defaults for line spacing, font sizes, margins, etc.
+
+## How to use it
 
 To start a new blank project, execute `quarto use template habemus-python/quarto-agh-thesis`.
 
 To render it to a pdf, do: `quarto render thesis.ipynb`.
+
+## Dependencies
 
 Note: to make it work, `quarto` needs to be executed in an environment with the following tools available (in `$PATH`):
 - [Jupyter](https://jupyter.org/) and some common Python packages:
@@ -33,8 +37,12 @@ Note: to make it work, `quarto` needs to be executed in an environment with the 
 
 The above installation steps are tested on CI with [this workflow](https://github.com/habemus-python/quarto-agh-thesis/blob/main/.github/workflows/test.yml).
 
+## Further reading
+
 See [Quarto docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
   to learn more about using templates.
 
-Template based on [Overleaf template](https://www.overleaf.com/latex/templates/praca-dyplomowa/kbwcrcmczypy) 
+## Credits
+
+Title page based on [Overleaf template](https://www.overleaf.com/latex/templates/praca-dyplomowa/kbwcrcmczypy) 
   by [Krzysztof Malarz](https://home.agh.edu.pl/~malarz/).
