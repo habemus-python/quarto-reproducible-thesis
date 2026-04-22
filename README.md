@@ -48,12 +48,16 @@ In English:
   * [The Unix Shell](https://swcarpentry.github.io/shell-novice/),
   * [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/),
   * [Version Control with Git](https://swcarpentry.github.io/git-novice/), 
-- [The Turing Way](https://book.the-turing-way.org/) handbook on reproducible, ethical and collaborative data science,
-- [Object-oriented Programming in Python for Mathematicians](https://object-oriented-python.github.io/) book by David Ham (imperial.ac.uk),
-- [Research Software Engineering with Python](https://third-bit.com/py-rse/) book by Damien Irving (csiro.au) et al.,
-- [Biblatex Cheat Sheet](https://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf),
-- [Mathematical typesetting guidelines](https://direct.mit.edu/DocumentLibrary/SubGuides/NECO-math-typesetting.pdf) from MIT,
-- [Typefaces for Symbols in Scientific Manuscripts](https://physics.nist.gov/cuu/pdf/typefaces.pdf) from NIST,
+- books on research software engineering:
+  * [The Turing Way](https://book.the-turing-way.org/) handbook on reproducible, ethical and collaborative data science,
+  * [Object-oriented Programming in Python for Mathematicians](https://object-oriented-python.github.io/) book by David Ham (imperial.ac.uk),
+  * [Research Software Engineering with Python](https://third-bit.com/py-rse/) book by Damien Irving (csiro.au) et al.,
+- Graphics, references and math typesetting:
+  * [Vector graphics](https://en.wikipedia.org/wiki/Vector_graphics) article on Wikipedia,
+  * [Tips on open source scientific illustration](https://holdenlab.github.io/blog/2024/scientific-illustration/) by Séamus Holden (warwick.ac.uk),
+  * [Biblatex Cheat Sheet](https://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf),
+  * [Mathematical typesetting guidelines](https://direct.mit.edu/DocumentLibrary/SubGuides/NECO-math-typesetting.pdf) from MIT,
+  * [Typefaces for Symbols in Scientific Manuscripts](https://physics.nist.gov/cuu/pdf/typefaces.pdf) from NIST,
 - [Quarto template docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
   (to learn more about using, tuning and developing Quarto templates).
 

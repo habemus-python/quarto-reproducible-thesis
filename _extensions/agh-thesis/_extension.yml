@@ -6,7 +6,7 @@ quarto-required: ">=1.4.0"
 contributes:
   formats:
     pdf:
-      documentclass: report
+      documentclass: mwrep
       papersize: A4
       fontsize: 12pt
 
