@@ -31,7 +31,7 @@ With the [default notebook unchanged](https://github.com/habemus-python/quarto-a
 
 To get information on how to install Quarto, [read the friendly manual](https://quarto.org/docs/get-started/).
 
-Note: `quarto` needs to be executed in an environment with the following tools available (in `$PATH`):
+Note: the template requires `quarto` to be executed in an environment with the following tools available (in `$PATH`):
 - [Jupyter](https://jupyter.org/) and some common Python packages:
    * using `pip`: `pip install jupyter matplotlib pyyaml nbformat nbclient`
    * on Debian/Ubuntu using APT: `apt-get install jupyter python3-matplotlib python3-yaml`
