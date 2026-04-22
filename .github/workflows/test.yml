@@ -45,12 +45,16 @@ jobs:
 
       - name: Install LaTeX and rsvg (macOS)
         if: runner.os == 'macOS'
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           quarto install tinytex --no-prompt --update-path
           brew install librsvg
 
       - name: Install LaTeX & rsvg and point Quarto to correct Python (Windows)
         if: runner.os == 'Windows'
+        env:
+          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
           quarto install tinytex --no-prompt --update-path
           choco install rsvg-convert -y
