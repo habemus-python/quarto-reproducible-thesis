@@ -50,7 +50,7 @@ jobs:
       - name: Install rsvg and point Quarto to correct Python (Windows)
         if: runner.os == 'Windows'
         run: |
-          echo "QUARTO_PYTHON=$(which python)" >> $GITHUB_ENV
+          echo "QUARTO_PYTHON=python" >> $GITHUB_ENV
           choco install rsvg-convert -y
 
       - name: Test template installation
