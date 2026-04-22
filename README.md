@@ -50,7 +50,7 @@ In English:
   * [Version Control with Git](https://swcarpentry.github.io/git-novice/), 
 - [The Turing Way](https://book.the-turing-way.org/) handbook on reproducible, ethical and collaborative data science,
 - [Object-oriented Programming in Python for Mathematicians](https://object-oriented-python.github.io/) book by David Ham (imperial.ac.uk),
-- [Research Software Engineering with Python: Building software that makes research possible](https://third-bit.com/py-rse/) book by Damien Irving (csiro.au) et al.,
+- [Research Software Engineering with Python](https://third-bit.com/py-rse/) book by Damien Irving (csiro.au) et al.,
 - [Biblatex Cheat Sheet](https://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf),
 - [Mathematical typesetting guidelines](https://direct.mit.edu/DocumentLibrary/SubGuides/NECO-math-typesetting.pdf) from MIT,
 - [Typefaces for Symbols in Scientific Manuscripts](https://physics.nist.gov/cuu/pdf/typefaces.pdf) from NIST,
@@ -58,7 +58,7 @@ In English:
   (to learn more about using, tuning and developing Quarto templates).
 
 In Polish:
-- [Jak przygotowywa¢ i prezentowa¢ prace dyplomowe inżynierskie i magisterskie](https://www.fis.agh.edu.pl/home/wfiis/wfiis/import/Wzory_dokumentow/thesis.pdf) by Andrzej Lenda (fis.agh.edu.pl),
+- [Jak przygotowywać i prezentować prace dyplomowe inżynierskie i magisterskie](https://www.fis.agh.edu.pl/home/wfiis/wfiis/import/Wzory_dokumentow/thesis.pdf) by Andrzej Lenda (fis.agh.edu.pl),
 - [MWCLS: podręcznik użytkownika polskich klas dokumentów LaTeXa](https://ctan.math.illinois.edu/macros/latex/contrib/mwcls/mwclsdoc.pdf) by Marcin Woliński (uw.edu.pl).
 
 ## 👥 Credits
