@@ -17,7 +17,7 @@ To start a new project, execute `quarto use template habemus-python/quarto-agh-t
 
 To render it to a pdf, do: `quarto render thesis.ipynb`.
 
-With the default notebook unchanged, the resultant pdf should look like:
+With the [default notebook unchanged](https://github.com/habemus-python/quarto-agh-thesis/blob/main/thesis.ipynb), the resultant pdf looks like this (generated on CI):
 
 <p align="center">
     <img 
