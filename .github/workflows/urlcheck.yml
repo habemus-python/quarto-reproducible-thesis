@@ -1,0 +1,26 @@
+name: urlcheck
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  schedule:
+    - cron: '0 13 * * 4'
+on:
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  url-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+      - uses: urlstechie/urlchecker-action@master
+        with:
+          file_types: .md, .ipynb
+          print_all: false
+          verbose: true
+          timeout: 20
+          retry_count: 3
