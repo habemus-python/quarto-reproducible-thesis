@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest] #, windows-latest, macos-latest]
+        os: [ubuntu-latest, windows-latest] #, macos-latest]
 
     steps:
       - name: Checkout repo
@@ -36,9 +36,6 @@ jobs:
       - name: Check Quarto
         run: quarto --version
 
-      - name: Install TinyTeX
-        run: #quarto install tinytex --no-prompt
-
       - name: Install LaTeX packages (incl. biber)
         run: |
           #tlmgr install biblatex biber
@@ -54,9 +51,10 @@ jobs:
         run: |
           brew install texlive librsvg
 
-      - name: Install rsvg (Windows)
+      - name: Install LaTeX and rsvg (Windows)
         if: runner.os == 'Windows'
         run: |
+          quarto install tinytex --no-prompt --update-path
           choco install rsvg-convert -y
 
       - name: Test template installation
