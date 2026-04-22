@@ -4,12 +4,23 @@ To start a new blank project, execute `quarto use template habemus-python/quarto
 
 To render it to a pdf, do: `quarto render thesis.ipynb`.
 
-Note that to make it work, `quarto` needs to be executed in an environment in which the following tools work OK:
-- [Jupyter](https://jupyter.org/) (on Debian/Ubuntu: `apt-get install jupyter`)
-- [LuaTeX](https://en.wikipedia.org/wiki/LuaTeX) (on Debian/Ubuntu: `apt-get install texlive-luatex`)
-- [rsvg-convert](https://en.wikipedia.org/wiki/Librsvg) (on Debian/Ubuntu: `apt-get install librsvg2-bin`)
-- [Biber](https://en.wikipedia.org/wiki/Biber_(LaTeX)) (on Debian/Ubuntu: `apt-get install biber`)
-- [Biblatex](https://biblatex.org/) (on Debian/Ubuntu: `apt-get install texlive-bibtex-extra`)  
+Note: to make it work, `quarto` needs to be executed in an environment with the following tools available (in `$PATH`):
+- [Jupyter](https://jupyter.org/) and some common Python packages:
+   * using `pip`: `pip install jupyter matplotlib pyyaml nbformat nbclient`
+   * on Debian/Ubuntu using APT: `apt-get install jupyter python3-matplotlib python3-yaml`
+- [LuaTeX](https://en.wikipedia.org/wiki/LuaTeX) and several [LaTeX packages](https://ctan.org/):
+   * on Debian/Ubuntu using APT: `apt-get install texlive-luatex texlive-latex-recommended texlive-lang-polish texlive-latex-extra`
+   * on macOS using Homebres: `brew install texlive`
+   * on Windows using Quarto: `quarto install tinytex`
+- [Biber](https://en.wikipedia.org/wiki/Biber_(LaTeX)):
+   * on Debian/Ubuntu using APT: `apt-get install biber`
+   * on macOS using Homebrew: `brew install biber`
+- [Biblatex](https://biblatex.org/):
+   * on Debian/Ubuntu using APT: `apt-get install texlive-bibtex-extra`  
+- [rsvg-convert](https://en.wikipedia.org/wiki/Librsvg):
+   * on Debian/Ubuntu using APT: `apt-get install librsvg2-bin`
+   * on macOS using Homebrew: `brew install librsvg`
+   * on Windows using Chocolatey: `choco install rsvg-convert`
 
 See [Quarto docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
   to learn more about using templates.
