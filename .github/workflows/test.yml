@@ -83,3 +83,18 @@ jobs:
         with: 
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
+
+      - name: Upload a GIF version for inclusion in README
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get install imagemagick
+          magick -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
+          magick -delay 80 -loop 0 frame-*.png $HOME/work/_temp/_github_home/thesis.gif
+
+      - name: tip release upload
+        if: github.ref == 'refs/heads/main' && runner.os == 'Linux'
+        uses: eine/tip@master
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          files: /github/home/thesis.gif
+
