@@ -47,11 +47,12 @@ jobs:
         run: |
           brew install texlive librsvg
 
-      - name: Install rsvg and point Quarto to correct Python (Windows)
+      - name: Install LaTeX & rsvg and point Quarto to correct Python (Windows)
         if: runner.os == 'Windows'
         run: |
-          echo "QUARTO_PYTHON=python" >> $GITHUB_ENV
+          quarto install tinytex --no-prompt --update-path
           choco install rsvg-convert -y
+          echo "QUARTO_PYTHON=python" >> $GITHUB_ENV
 
       - name: Test template installation
         run: |
