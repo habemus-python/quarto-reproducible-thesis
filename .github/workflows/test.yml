@@ -46,7 +46,8 @@ jobs:
       - name: Install LaTeX and rsvg (macOS)
         if: runner.os == 'macOS'
         run: |
-          brew install texlive librsvg
+          quarto install tinytex --no-prompt --update-path
+          brew install librsvg
 
       - name: Install LaTeX & rsvg and point Quarto to correct Python (Windows)
         if: runner.os == 'Windows'
