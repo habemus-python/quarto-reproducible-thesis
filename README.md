@@ -63,6 +63,7 @@ In English:
 
 In Polish:
 - [Jak przygotowywać i prezentować prace dyplomowe inżynierskie i magisterskie](https://www.fis.agh.edu.pl/home/wfiis/wfiis/import/Wzory_dokumentow/thesis.pdf) by Andrzej Lenda (fis.agh.edu.pl),
+- [Wymagania stawiane pracom magisterskim i licencjackim](https://www.fuw.edu.pl/tl_files/studia/dyplomy/wymagania_prac_mag_lic.pdf) from fuw.edu.pl,
 - [MWCLS: podręcznik użytkownika polskich klas dokumentów LaTeXa](https://ctan.math.illinois.edu/macros/latex/contrib/mwcls/mwclsdoc.pdf) by Marcin Woliński (uw.edu.pl).
 
 ## 👥 Credits

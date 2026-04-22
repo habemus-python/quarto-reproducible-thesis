@@ -89,7 +89,8 @@ jobs:
         run: |
           sudo apt-get install imagemagick
           convert -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
-          convert -delay 80 -loop 0 frame-*.png /github/home/thesis.gif
+          mkdir -p $HOME/work/_temp/_github_home/
+          convert -delay 80 -loop 0 frame-*.png $HOME/work/_temp/_github_home/thesis.gif
 
       - name: tip release upload
         if: github.ref == 'refs/heads/main' && runner.os == 'Linux'
