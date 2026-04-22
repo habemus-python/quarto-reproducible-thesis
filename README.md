@@ -53,7 +53,7 @@ The above installation steps are tested on CI with [this workflow](https://githu
 
 ## 📚 Further reading
 
-🇬🇧In English:
+🇬🇧 In English:
 - [Software Carpentry](https://software-carpentry.org/) lessons on: 
   * [The Unix Shell](https://swcarpentry.github.io/shell-novice/),
   * [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/),
