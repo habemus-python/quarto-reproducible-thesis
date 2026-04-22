@@ -1,5 +1,9 @@
 name: test
 
+defaults:
+  run:
+    shell: bash -ex {0}
+
 on:
   push:
     branches: [ main ]
@@ -57,6 +61,7 @@ jobs:
 
       - name: Render example notebook to PDF
         run: |
+          echo $QUARTO_PYTHON
           quarto render test-project/thesis.ipynb 
 
       - name: Rename PDF (platform-specific)
