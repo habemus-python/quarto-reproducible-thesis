@@ -21,11 +21,6 @@ contributes:
         - style=authoryear
       bibliography: refs.bib
 
-      colorlinks: true
-      linkcolor: "00693C"
-      urlcolor: "A71930"
-      citecolor: "00693C"
-
       header-includes: |
         \usepackage{polski}
         \usepackage[utf8]{inputenc}
@@ -35,6 +30,11 @@ contributes:
         \definecolor{aghgreen}{HTML}{00693C}
         \definecolor{aghblack}{HTML}{1E1E1E}
         \definecolor{aghred}{HTML}{A71930}
+
+      colorlinks: true
+      linkcolor: aghred
+      urlcolor: aghred
+      citecolor: aghgreen
 
       template-partials:
         - "partials/before-body.tex"
