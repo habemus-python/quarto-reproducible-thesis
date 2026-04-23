@@ -1,4 +1,4 @@
-name: urlcheck
+name: spellcheck
 
 defaults:
   run:

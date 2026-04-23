@@ -6,7 +6,11 @@ matrix:
     wordlists:
       - .wordlist.txt
     encoding: utf-8
-    
+  pipeline:
+    - pyspelling.filters.html:
+        comments: false
+        ignores:
+          - span.emoji
   sources:
     - '*.md' 
 

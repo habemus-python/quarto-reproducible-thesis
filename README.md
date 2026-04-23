@@ -1,19 +1,19 @@
-# 🎓 Quarto template for reproducible BEng/MSc/PhD theses using Python 🐍
+# <span class="emoji">🎓</span> Quarto template for reproducible BEng/MSc/PhD theses using Python <span class="emoji">🐍</span>
 
 (project maintained at and exemplified with a titlepage for [AGH University of Krakow](https://www.agh.edu.pl/en))
 
 This template aims to (by design!):
-- 📦 encapsulate all components of a BEng/MSc thesis into a single Jupyter/Python notebook,
-- ✏️  leverage the best of Markdown and LaTeX for hassle-free quality typesetting,
-- 🔄 automate generation of plots, tables and in-text numerical values,
-- 📈 enforce vector graphics for matplotlib plots,
-- 🔗 orchestrate clickable hyperlinks (incl. to the bibliography and from there to the citing locations),
-- 💻 offer code listings with syntax-highlighting,
-- 🌍 handle multi-lingual content (Polish letters, etc),
-- 📑 exemplify a robust bibliography setup,
-- 📐 provide reasonable defaults for line spacing, font sizes, margins, etc.
+- <span class="emoji">📦</span> encapsulate all components of a BEng/MSc thesis into a single Jupyter/Python notebook,
+- <span class="emoji">✏️ </span> leverage the best of Markdown and LaTeX for hassle-free quality typesetting,
+- <span class="emoji">🔄</span> automate generation of plots, tables and in-text numerical values,
+- <span class="emoji">📈</span> enforce vector graphics for matplotlib plots,
+- <span class="emoji">🔗</span> orchestrate clickable hyperlinks (incl. to the bibliography and from there to the citing locations),
+- <span class="emoji">💻</span> offer code listings with syntax-highlighting,
+- <span class="emoji">🌍</span> handle multi-lingual content (Polish letters, etc),
+- <span class="emoji">📑</span> exemplify a robust bibliography setup,
+- <span class="emoji">📐</span> provide reasonable defaults for line spacing, font sizes, margins, etc.
 
-## 🚀 How to use it
+## <span class="emoji">🚀</span> How to use it
 
 To start a new project, execute `quarto use template habemus-python/quarto-reproducible-thesis`.
 
@@ -29,7 +29,7 @@ With the [default notebook unchanged](https://github.com/habemus-python/quarto-r
     />
 </p>
 
-## ⚙️  Dependencies
+## <span class="emoji">⚙️ </span> Dependencies
 
 To get information on how to install Quarto, [read the friendly manual](https://quarto.org/docs/get-started/).
 
@@ -53,9 +53,9 @@ The template requires `quarto` to be executed in an environment with the followi
 
 The above installation steps are tested on CI with [this workflow](https://github.com/habemus-python/quarto-reproducible-thesis/blob/main/.github/workflows/test.yml).
 
-## 📚 Further reading
+## <span class="emoji">📚</span> Further reading
 
-🇬🇧 In English:
+<span class="emoji">🇬🇧</span> In English:
 - [Software Carpentry](https://software-carpentry.org/) lessons on: 
   * [The Unix Shell](https://swcarpentry.github.io/shell-novice/),
   * [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/),
@@ -73,12 +73,12 @@ The above installation steps are tested on CI with [this workflow](https://githu
 - [Quarto template docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
   (to learn more about using, tuning and developing Quarto templates).
 
-🇵🇱 In Polish:
+<span class="emoji">🇵🇱</span> In Polish:
 - [Jak przygotowywać i prezentować prace dyplomowe inżynierskie i magisterskie](https://www.fis.agh.edu.pl/home/wfiis/wfiis/import/Wzory_dokumentow/thesis.pdf) by Andrzej Lenda (fis.agh.edu.pl),
 - [Wymagania stawiane pracom magisterskim i licencjackim](https://www.fuw.edu.pl/tl_files/studia/dyplomy/wymagania_prac_mag_lic.pdf) from fuw.edu.pl,
 - [MWCLS: podręcznik użytkownika polskich klas dokumentów LaTeXa](https://ctan.math.illinois.edu/macros/latex/contrib/mwcls/mwclsdoc.pdf) by Marcin Woliński (uw.edu.pl).
 
-## 👥 Credits
+## <span class="emoji">👥</span> Credits
 
 Title page based on [Overleaf template](https://www.overleaf.com/latex/templates/praca-dyplomowa/kbwcrcmczypy) 
   by [Krzysztof Malarz](https://home.agh.edu.pl/~malarz/).
