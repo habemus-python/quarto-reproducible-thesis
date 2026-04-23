@@ -22,9 +22,9 @@ contributes:
       bibliography: refs.bib
 
       colorlinks: true
-      linkcolor: "#00693C"
-      urlcolor: "#A71930"
-      citecolor: "#00693C"
+      linkcolor: "00693C"
+      urlcolor: "A71930"
+      citecolor: "00693C"
 
       header-includes: |
         \usepackage{polski}

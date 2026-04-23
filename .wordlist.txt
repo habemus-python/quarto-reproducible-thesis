@@ -116,3 +116,11 @@ uw
 użytkownika
 warwick
 yaml
+ac
+lang
+math
+pl
+etc
+incl
+color
+refs
