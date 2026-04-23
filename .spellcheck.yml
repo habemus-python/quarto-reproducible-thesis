@@ -1,7 +1,7 @@
 matrix:
 - name: markdown
   hunspell:
-    d: en_US
+    d: en_GB
   dictionary:
     wordlists:
       - .wordlist.txt
