@@ -1,0 +1,26 @@
+name: precommit
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  precommit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+      - run: |
+          pip install pre-commit
+          pre-commit clean
+          pre-commit autoupdate
+          pre-commit run --all-files --show-diff-on-failure
+      - if: ${{ failure() }}
+        run: git diff
+
