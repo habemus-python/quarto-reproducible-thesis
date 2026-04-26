@@ -9,6 +9,7 @@ contributes:
       documentclass: mwart
       papersize: A4
       fontsize: 12pt
+      openright: true
 
       toc: true
       toc-depth: 3
@@ -26,15 +27,23 @@ contributes:
         \usepackage{polski,graphicx,epigraph,xcolor,etoolbox,abstract}
         \usepackage[english,polish]{babel}
         \usepackage[utf8]{inputenc}
-        \usepackage[margin=3.5cm]{geometry}
+        \usepackage[a4paper, top=2cm, bottom=2cm, inner=2cm, outer=2cm, bindingoffset=1cm, twoside]{geometry}
         \renewcommand{\abstracttextfont}{\small}  
 
         \definecolor{aghgreen}{HTML}{00693C}
         \definecolor{aghblack}{HTML}{1E1E1E}
         \definecolor{aghred}{HTML}{A71930}
-        \linespread{1.2}
+        \linespread{1.25}
         \renewcommand*{\bibfont}{\secondarysize}
-        \apptocmd{\tableofcontents}{\clearpage}{}{}
+        \preto\section{\clearpage}
+        \newcommand{\techword}[1]{{\normalfont\textsc{#1}}}
+        \let\oldtableofcontents\tableofcontents
+        \renewcommand{\tableofcontents}{
+          \clearpage
+          \thispagestyle{empty}
+          \oldtableofcontents
+          \clearpage
+        }
 
       colorlinks: true
       linkcolor: aghred
