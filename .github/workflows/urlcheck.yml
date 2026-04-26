@@ -22,5 +22,5 @@ jobs:
           print_all: false
           verbose: true
           timeout: 20
-          exclude_urls: http://www.w3.org/1999/xlink\
+          exclude_urls: http://www.w3.org/1999/xlink\,https://creativecommons.org/licenses/by/4.0/\
           retry_count: 3
