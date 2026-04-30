@@ -110,6 +110,7 @@ jobs:
       PDF_FILENAME: "thesis.pdf"
     steps:
       - uses: quarto-dev/quarto-actions/setup@v2
+      - run: quarto install tinytex --no-prompt --update-path
       - uses: actions/checkout@v6
       - name: Install LaTeX and rsvg (Linux)
         run: |
