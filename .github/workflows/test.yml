@@ -25,7 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
-        command: ["quarto render thesis.ipynb", "quarto render"]
+        quarto_args: ["render thesis.ipynb", "render"]
 
     steps:
       - name: Checkout repo
@@ -78,7 +78,7 @@ jobs:
         working-directory: test-project
         run: |
           echo $QUARTO_PYTHON
-          ${{ matrix.command }}
+          quarto ${{ matrix.quarto_args }}
 
       - name: Rename PDF (platform-specific)
         run: | 
@@ -91,7 +91,7 @@ jobs:
           path: example-${{ matrix.os }}.pdf
 
       - name: Upload a GIF version for inclusion in README
-        if: runner.os == 'Linux' && matrix.command == 'quarto render thesis.ipynb' # TODO: This should be rewfactored to be done in a separate job
+        if: runner.os == 'Linux' && matrix.quarto_args == 'render' # TODO: This should be refactored to be done in a separate job
         run: |
           sudo apt-get install imagemagick
           convert -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
