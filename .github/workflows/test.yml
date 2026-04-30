@@ -100,7 +100,7 @@ jobs:
           cp example-${{ matrix.os }}.pdf $HOME/work/_temp/_github_home/thesis.pdf
 
       - name: tip release upload
-        if: github.ref == 'refs/heads/main' && runner.os == 'Linux'
+        if: github.ref == 'refs/heads/main' && runner.os == 'Linux' && matrix.quarto_args == 'render'
         uses: eine/tip@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
