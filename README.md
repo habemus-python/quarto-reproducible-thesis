@@ -17,7 +17,7 @@ This template aims to (by design!):
 
 To start a new project, execute `quarto use template habemus-python/quarto-reproducible-thesis`.
 
-To render it to a pdf, do: `quarto render thesis.ipynb`.
+To render it to a pdf, do: `quarto render` (or `quarto render thesis.ipynb`).
 
 With the [default notebook unchanged](https://github.com/habemus-python/quarto-reproducible-thesis/blob/main/thesis.ipynb), 
   the [resultant pdf](https://github.com/habemus-python/quarto-reproducible-thesis/releases/download/tip/thesis.pdf) looks like this (generated on CI):
