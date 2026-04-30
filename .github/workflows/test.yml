@@ -103,3 +103,13 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: /github/home/thesis.*
 
+  check-quarto-no-args:
+    runs-on: ubuntu-latest
+    env:
+      PDF_FILENAME: "thesis.pdf"
+    steps:
+      - use: quarto-dev/quarto-actions/setup@v2
+      - use: actions/checkout@v6
+      - run: pip install -r requirements.txt
+      - run: quarto render
+      - run: test -f $PDF_FILENAME
