@@ -91,7 +91,7 @@ jobs:
           path: example-${{ matrix.os }}.pdf
 
       - name: Upload a GIF version for inclusion in README
-        if: runner.os == 'Linux' && matrix.command == "quarto render thesis.ipynb" # TODO: This should be rewfactored to be done in a separate job
+        if: runner.os == 'Linux' && matrix.command == 'quarto render thesis.ipynb' # TODO: This should be rewfactored to be done in a separate job
         run: |
           sudo apt-get install imagemagick
           convert -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
