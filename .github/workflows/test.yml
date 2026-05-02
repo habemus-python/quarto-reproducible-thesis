@@ -25,6 +25,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, windows-latest, macos-latest]
+        quarto_args: ["render thesis.ipynb", "render"]
 
     steps:
       - name: Checkout repo
@@ -38,7 +39,8 @@ jobs:
       - name: Install Python deps
         run: |
           python -m pip install --upgrade pip
-          python -m pip install jupyter nbformat nbclient matplotlib pyyaml
+          python -m pip install -r requirements.txt
+          python -m pip install nbformat nbclient pyyaml
 
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -73,9 +75,10 @@ jobs:
           quarto use template .. --no-prompt
 
       - name: Render example notebook to PDF
+        working-directory: test-project
         run: |
           echo $QUARTO_PYTHON
-          quarto render test-project/thesis.ipynb 
+          quarto ${{ matrix.quarto_args }}
 
       - name: Rename PDF (platform-specific)
         run: | 
@@ -88,7 +91,7 @@ jobs:
           path: example-${{ matrix.os }}.pdf
 
       - name: Upload a GIF version for inclusion in README
-        if: runner.os == 'Linux'
+        if: runner.os == 'Linux' && matrix.quarto_args == 'render' # TODO: This should be refactored to be done in a separate job
         run: |
           sudo apt-get install imagemagick
           convert -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
@@ -97,9 +100,8 @@ jobs:
           cp example-${{ matrix.os }}.pdf $HOME/work/_temp/_github_home/thesis.pdf
 
       - name: tip release upload
-        if: github.ref == 'refs/heads/main' && runner.os == 'Linux'
+        if: github.ref == 'refs/heads/main' && runner.os == 'Linux' && matrix.quarto_args == 'render'
         uses: eine/tip@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: /github/home/thesis.*
-

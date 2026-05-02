@@ -17,7 +17,7 @@ This template aims to (by design!):
 
 To start a new project, execute `quarto use template habemus-python/quarto-reproducible-thesis`.
 
-To render it to a pdf, do: `quarto render thesis.ipynb`.
+To render it to a pdf, do: `quarto render` (or `quarto render thesis.ipynb`).
 
 With the [default notebook unchanged](https://github.com/habemus-python/quarto-reproducible-thesis/blob/main/thesis.ipynb), 
   the [resultant pdf](https://github.com/habemus-python/quarto-reproducible-thesis/releases/download/tip/thesis.pdf) looks like this (generated on CI):
@@ -54,30 +54,10 @@ The template requires `quarto` to be executed in an environment with the followi
 
 The above installation steps are tested on CI with [this workflow](https://github.com/habemus-python/quarto-reproducible-thesis/blob/main/.github/workflows/test.yml).
 
-## <span class="emoji">📚</span> Further reading
+## <span class="emoji">🛠️</span> Notes for contributors
 
-<span class="emoji">🇬🇧</span> In English:
-- [Software Carpentry](https://software-carpentry.org/) lessons on: 
-  * [The Unix Shell](https://swcarpentry.github.io/shell-novice/),
-  * [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/),
-  * [Version Control with Git](https://swcarpentry.github.io/git-novice/), 
-- books on research software engineering:
-  * [The Turing Way](https://book.the-turing-way.org/) handbook on reproducible, ethical and collaborative data science,
-  * [Object-oriented Programming in Python for Mathematicians](https://object-oriented-python.github.io/) book by David Ham (imperial.ac.uk),
-  * [Research Software Engineering with Python](https://third-bit.com/py-rse/) book by Damien Irving (csiro.au) et al.,
-- Graphics, references and math typesetting:
-  * [Vector graphics](https://en.wikipedia.org/wiki/Vector_graphics) article on Wikipedia,
-  * [Tips on open source scientific illustration](https://holdenlab.github.io/blog/2024/scientific-illustration/) by Séamus Holden (warwick.ac.uk),
-  * [Biblatex Cheat Sheet](https://tug.ctan.org/info/biblatex-cheatsheet/biblatex-cheatsheet.pdf),
-  * [Mathematical typesetting guidelines](https://direct.mit.edu/DocumentLibrary/SubGuides/NECO-math-typesetting.pdf) from MIT,
-  * [Typefaces for Symbols in Scientific Manuscripts](https://physics.nist.gov/cuu/pdf/typefaces.pdf) from NIST,
+- [pre-commit documentation](https://pre-commit.com/#3-install-the-git-hook-scripts)
 - [Quarto template docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
-  (to learn more about using, tuning and developing Quarto templates).
-
-<span class="emoji">🇵🇱</span> In Polish:
-- [Jak przygotowywać i prezentować prace dyplomowe inżynierskie i magisterskie](https://www.fis.agh.edu.pl/home/wfiis/wfiis/import/Wzory_dokumentow/thesis.pdf) by Andrzej Lenda (fis.agh.edu.pl),
-- [Wymagania stawiane pracom magisterskim i licencjackim](https://www.fuw.edu.pl/tl_files/studia/dyplomy/wymagania_prac_mag_lic.pdf) from fuw.edu.pl,
-- [MWCLS: podręcznik użytkownika polskich klas dokumentów LaTeXa](https://ctan.math.illinois.edu/macros/latex/contrib/mwcls/mwclsdoc.pdf) by Marcin Woliński (uw.edu.pl).
 
 ## <span class="emoji">👥</span> Credits
 
