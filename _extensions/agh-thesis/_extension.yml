@@ -49,6 +49,8 @@ contributes:
       linkcolor: aghred
       urlcolor: aghred
       citecolor: aghgreen
+      plainpages: false
+      pdfpagelabels: true
 
       template-partials:
         - "partials/before-body.tex"
