@@ -339,3 +339,7 @@ md
 optimised
 testpypi
 utf8
+pyproject
+setuptools
+toml
+whl
