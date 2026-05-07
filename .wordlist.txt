@@ -332,3 +332,4 @@ własnym
 własną
 zastąpić
 zawartość
+utf8
