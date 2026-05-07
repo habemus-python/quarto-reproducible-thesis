@@ -1,7 +1,7 @@
 name: "Setup environment"
 description: "Setup Python and dependencies"
 inputs:
-  runs-on:
+  token:
     required: true
 runs:
   using: "composite"
@@ -20,11 +20,30 @@ runs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Install LaTeX, ImageMagick and rsvg (Linux)
-        if: runner.os == 'ubuntu-latest'
+        if: runner.os == 'Linux'
         shell: bash
         run: |
           sudo apt-get install imagemagick
           sudo apt-get update
           sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish
+
+      - name: Install LaTeX and rsvg (macOS)
+        if: runner.os == 'macOS'
+        shell: bash
+        env:
+          GITHUB_PAT: ${{ inputs.token }}
+        run: |
+          quarto install tinytex --no-prompt --update-path
+          brew install librsvg
+
+      - name: Install LaTeX & rsvg and point Quarto to correct Python (Windows)
+        if: runner.os == 'Windows'
+        env:
+          GITHUB_PAT: ${{ inputs.token }}
+        shell: bash
+        run: |
+          quarto install tinytex --no-prompt --update-path
+          choco install rsvg-convert -y
+          echo "QUARTO_PYTHON=python" >> $GITHUB_ENV
 
 

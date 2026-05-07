@@ -27,7 +27,7 @@ jobs:
       - name: Set up env
         uses: ./.github/actions/setup-env
         with:
-          os: ubuntu-latest
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Render notebook to PDF
         run: |
