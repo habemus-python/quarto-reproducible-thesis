@@ -1,8 +1,5 @@
 name: "Setup environment"
 description: "Setup Python and dependencies"
-inputs:
-  setup-name:
-    required: true
 runs:
   using: "composite"
   steps:
