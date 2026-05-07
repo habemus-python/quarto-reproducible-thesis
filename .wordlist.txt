@@ -338,3 +338,4 @@ gz
 md
 optimised
 testpypi
+utf8
