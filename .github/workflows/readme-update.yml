@@ -1,4 +1,4 @@
-name: Build GIF Preview for README
+name: Build GIF Preview & Example pdf for README
 
 defaults:
   run:
