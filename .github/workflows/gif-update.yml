@@ -1,0 +1,61 @@
+name: Build GIF Preview for README
+
+defaults:
+  run:
+    shell: bash -ex {0}
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - README.md
+  pull_request:
+    branches: [ main ]
+    paths-ignore:
+      - README.md
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+
+      - name: Install Python deps
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m pip install nbformat nbclient pyyaml
+
+      - name: Install Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Install LaTeX, ImageMagick and rsvg (Linux)
+        run: |
+          sudo apt-get install imagemagick
+          sudo apt-get update
+          sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish
+
+      - name: Render notebook to PDF
+        working-directory: test-project
+        run: |
+          quarto render
+
+      - name: Upload a GIF version for inclusion in README
+        run: |
+          convert -density 100 thesis.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
+          mkdir -p $HOME/work/_temp/_github_home/
+          convert -delay 120 -loop 0 frame-*.png $HOME/work/_temp/_github_home/thesis.gif
+          cp thesis.pdf $HOME/work/_temp/_github_home/thesis.pdf

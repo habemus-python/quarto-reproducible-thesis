@@ -90,15 +90,6 @@ jobs:
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
 
-      - name: Upload a GIF version for inclusion in README
-        if: runner.os == 'Linux' && matrix.quarto_args == 'render' # TODO: This should be refactored to be done in a separate job
-        run: |
-          sudo apt-get install imagemagick
-          convert -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
-          mkdir -p $HOME/work/_temp/_github_home/
-          convert -delay 120 -loop 0 frame-*.png $HOME/work/_temp/_github_home/thesis.gif
-          cp example-${{ matrix.os }}.pdf $HOME/work/_temp/_github_home/thesis.pdf
-
       - name: tip release upload
         if: github.ref == 'refs/heads/main' && runner.os == 'Linux' && matrix.quarto_args == 'render'
         uses: eine/tip@master
