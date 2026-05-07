@@ -332,3 +332,9 @@ własnym
 własną
 zastąpić
 zawartość
+backend
+dist
+gz
+md
+optimised
+testpypi
