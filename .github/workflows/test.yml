@@ -58,9 +58,3 @@ jobs:
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
 
-      - name: tip release upload
-        if: github.ref == 'refs/heads/main' && runner.os == 'Linux' && matrix.quarto_args == 'render'
-        uses: eine/tip@master
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          files: /github/home/thesis.*
