@@ -332,4 +332,14 @@ własnym
 własną
 zastąpić
 zawartość
+backend
+dist
+gz
+md
+optimised
+testpypi
 utf8
+pyproject
+setuptools
+toml
+whl
