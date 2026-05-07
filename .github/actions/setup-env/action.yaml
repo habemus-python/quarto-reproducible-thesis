@@ -1,14 +1,11 @@
 name: "Setup environment"
-description: "Checkout repo, setup Python and dependencies"
+description: "Setup Python and dependencies"
 inputs:
   setup-name:
     required: true
 runs:
   using: "composite"
   steps:
-      - name: Checkout repo
-        uses: actions/checkout@v6
-
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
