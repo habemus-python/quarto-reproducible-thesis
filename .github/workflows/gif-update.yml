@@ -26,6 +26,8 @@ jobs:
 
       - name: Set up env
         uses: ./.github/actions/setup-env
+        with:
+          os: ubuntu-latest
 
       - name: Render notebook to PDF
         run: |
