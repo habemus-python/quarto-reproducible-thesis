@@ -1,0 +1,41 @@
+name: Build GIF Preview for README
+
+defaults:
+  run:
+    shell: bash -ex {0}
+
+permissions:
+  contents: write
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - README.md
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v6
+
+      - name: Set up env
+        uses: ./.github/actions/setup-env
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Render notebook to PDF
+        run: |
+          quarto render
+
+      - name: Upload a GIF version for inclusion in README
+        run: |
+          convert -density 100 thesis.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
+          mkdir -p $HOME/work/_temp/_github_home/
+          convert -delay 120 -loop 0 frame-*.png $HOME/work/_temp/_github_home/thesis.gif
+          cp thesis.pdf $HOME/work/_temp/_github_home/thesis.pdf

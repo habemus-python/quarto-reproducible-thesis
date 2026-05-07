@@ -31,42 +31,10 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v6
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: Set up env
+        uses: ./.github/actions/setup-env
         with:
-          python-version: "3.13"
-
-      - name: Install Python deps
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install -r requirements.txt
-          python -m pip install nbformat nbclient pyyaml
-
-      - name: Install Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
-      - name: Install LaTeX and rsvg (Linux)
-        if: runner.os == 'Linux'
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish
-
-      - name: Install LaTeX and rsvg (macOS)
-        if: runner.os == 'macOS'
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          quarto install tinytex --no-prompt --update-path
-          brew install librsvg
-
-      - name: Install LaTeX & rsvg and point Quarto to correct Python (Windows)
-        if: runner.os == 'Windows'
-        env:
-          GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          quarto install tinytex --no-prompt --update-path
-          choco install rsvg-convert -y
-          echo "QUARTO_PYTHON=python" >> $GITHUB_ENV
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Test template installation
         run: |
@@ -89,15 +57,6 @@ jobs:
         with: 
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
-
-      - name: Upload a GIF version for inclusion in README
-        if: runner.os == 'Linux' && matrix.quarto_args == 'render' # TODO: This should be refactored to be done in a separate job
-        run: |
-          sudo apt-get install imagemagick
-          convert -density 100 example-${{ matrix.os }}.pdf -quality 100 -background white -alpha remove -alpha off frame-%03d.png
-          mkdir -p $HOME/work/_temp/_github_home/
-          convert -delay 120 -loop 0 frame-*.png $HOME/work/_temp/_github_home/thesis.gif
-          cp example-${{ matrix.os }}.pdf $HOME/work/_temp/_github_home/thesis.pdf
 
       - name: tip release upload
         if: github.ref == 'refs/heads/main' && runner.os == 'Linux' && matrix.quarto_args == 'render'
