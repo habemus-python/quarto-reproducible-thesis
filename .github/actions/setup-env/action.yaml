@@ -27,22 +27,24 @@ runs:
           sudo apt-get update
           sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish
 
-      - name: Install LaTeX and rsvg (macOS)
+      - name: Install TinyTeX (macOS & Windows)
+        if: runner.os == 'macOS' || runner.os == 'Windows'
+        uses: r-lib/actions/setup-tinytex@v2
+      
+      - name: Install rsvg (macOS)
         if: runner.os == 'macOS'
         shell: bash
         env:
           GITHUB_PAT: ${{ inputs.token }}
         run: |
-          quarto install tinytex --no-prompt --update-path
           brew install librsvg
 
-      - name: Install LaTeX & rsvg and point Quarto to correct Python (Windows)
+      - name: Install rsvg and point Quarto to correct Python (Windows)
         if: runner.os == 'Windows'
         env:
           GITHUB_PAT: ${{ inputs.token }}
         shell: bash
         run: |
-          quarto install tinytex --no-prompt --update-path
           choco install rsvg-convert -y
           echo "QUARTO_PYTHON=python" >> $GITHUB_ENV
 
