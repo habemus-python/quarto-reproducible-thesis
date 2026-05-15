@@ -333,3 +333,4 @@ własną
 zastąpić
 zawartość
 utf8
+wb
