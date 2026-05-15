@@ -61,7 +61,7 @@ The above installation steps are CI-tested on 🐧 Linux, 🍏 macOS and 🪟 Wi
 
 ## <span class="emoji">👥</span> Credits
 
-See GitHub [Insights on project contributors](https://github.com/habemus-python/quarto-reproducible-thesis/graphs/contributors?from=2%2F7%2F2026).
+See GitHub <a href="https://github.com/habemus-python/quarto-reproducible-thesis/graphs/contributors?from=2%2F7%2F2026">Insights on project contributors</a>.
 
 Title page based on [Overleaf template](https://www.overleaf.com/latex/templates/praca-dyplomowa/kbwcrcmczypy) 
   by [Krzysztof Malarz](https://home.agh.edu.pl/~malarz/).
