@@ -46,7 +46,7 @@ The template requires `quarto` to be executed in an environment with the followi
 - [Biber](https://en.wikipedia.org/wiki/Biber_(LaTeX)):
    * 🐧 on Debian/Ubuntu using APT: `apt-get install biber`
    * 🍏 on macOS using Homebrew: `brew install biber`
-- [Biblatex](https://biblatex.org/):
+- [BibLaTeX](https://biblatex.org/):
    * 🐧 on Debian/Ubuntu using APT: `apt-get install texlive-bibtex-extra`  
 - [rsvg-convert](https://en.wikipedia.org/wiki/Librsvg):
    * 🐧 on Debian/Ubuntu using APT: `apt-get install librsvg2-bin`
