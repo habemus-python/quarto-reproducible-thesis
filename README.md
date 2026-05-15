@@ -10,8 +10,9 @@ This template aims to (by design!):
 - <span class="emoji">🔗</span> orchestrate clickable hyperlinks (incl. to the bibliography and from there to the citing locations),
 - <span class="emoji">💻</span> offer code listings with syntax-highlighting,
 - <span class="emoji">🌍</span> handle multi-lingual content (Polish letters, etc),
-- <span class="emoji">📑</span> exemplify a robust bibliography setup,
-- <span class="emoji">📐</span> provide reasonable defaults for line spacing, font sizes, margins, etc.
+- <span class="emoji">📑</span> exemplify a robust BiblaTeX-based bibliography setup,
+- <span class="emoji">📐</span> provide reasonable defaults for line spacing, font sizes, margins, etc.,
+- <span class="emoji">🐧🍏🪟</span> reply on tools available on all popular systems.
 
 ## <span class="emoji">🚀</span> How to use it
 
