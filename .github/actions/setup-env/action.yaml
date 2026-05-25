@@ -24,7 +24,7 @@ runs:
         shell: bash
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish imagemagick
+          sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish texlive-music imagemagick
 
       - name: Install TinyTeX (macOS & Windows)
         if: runner.os == 'macOS' || runner.os == 'Windows'

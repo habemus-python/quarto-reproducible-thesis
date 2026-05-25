@@ -48,6 +48,9 @@ The template requires `quarto` to be executed in an environment with the followi
    * 🍏 on macOS using Homebrew: `brew install biber`
 - [BibLaTeX](https://biblatex.org/):
    * 🐧 on Debian/Ubuntu using APT: `apt-get install texlive-bibtex-extra`  
+- [MusiXTeX](https://www.ctan.org/pkg/musixtex) and its [PMX](https://www.ctan.org/pkg/pmx) preprocessor (for embedding musical notation):
+   * <span class="emoji">🐧</span> on Debian/Ubuntu using APT: `apt-get install texlive-music`
+   * <span class="emoji">🍏🪟</span> on macOS/Windows: bundled with the `quarto install tinytex` distribution
 - [rsvg-convert](https://en.wikipedia.org/wiki/Librsvg):
    * 🐧 on Debian/Ubuntu using APT: `apt-get install librsvg2-bin`
    * 🍏 on macOS using Homebrew: `brew install librsvg`
