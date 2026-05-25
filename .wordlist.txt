@@ -338,3 +338,8 @@ wb
 Cfaerber
 Yug
 Inkscape
+eq
+int
+italicized
+mathrm
+mc
