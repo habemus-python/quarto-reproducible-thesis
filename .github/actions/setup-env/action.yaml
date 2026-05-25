@@ -34,7 +34,7 @@ runs:
         if: runner.os == 'macOS' || runner.os == 'Windows'
         shell: bash
         run: |
-          tlmgr install musixtex musixtex-fonts pmx musixflx pdfcrop
+          tlmgr install musixtex musixtex-fonts pmx pdfcrop
       
       - name: Install rsvg (macOS)
         if: runner.os == 'macOS'
