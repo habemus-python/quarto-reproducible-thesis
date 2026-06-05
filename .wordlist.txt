@@ -368,3 +368,14 @@ wb
 Cfaerber
 Yug
 Inkscape
+AVG
+DESC
+Pandoc
+describeListing
+dir
+exe
+javascript
+jq
+json
+sql
+sqlfluff
