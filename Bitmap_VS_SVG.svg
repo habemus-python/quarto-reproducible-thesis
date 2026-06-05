@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 915 585"
+   version="1.1"
+   id="svg15"
+   sodipodi:docname="Bitmap_VS_SVG.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview15"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.4734413"
+     inkscape:cx="483.2225"
+     inkscape:cy="327.46469"
+     inkscape:window-width="2560"
+     inkscape:window-height="1415"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="b"
+       y2="445"
+       gradientUnits="userSpaceOnUse"
+       y1="179"
+       gradientTransform="translate(0 -2.06)"
+       x2="-29.7"
+       x1="322">
+      <stop
+         stop-color="#33f"
+         offset="0"
+         id="stop1" />
+      <stop
+         stop-color="#3f3fff"
+         stop-opacity="0"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       id="a"
+       y2="414"
+       gradientUnits="userSpaceOnUse"
+       y1="159"
+       x2="490"
+       x1="815">
+      <stop
+         stop-color="#33f"
+         offset="0"
+         id="stop3" />
+      <stop
+         stop-color="#3f3fff"
+         stop-opacity="0"
+         offset="1"
+         id="stop4" />
+    </linearGradient>
+  </defs>
+  <path
+     fill="url(#b)"
+     d="m403 247c-12 115-135 122-368 123-4.3-1.07-7.32-7.33-6-41 76-37 151-124 167-236 93 123 201 40.9 207 154z"
+     id="path4" />
+  <g
+     stroke-width="3.45"
+     fill="none"
+     id="g6">
+    <path
+       stroke="#448"
+       d="m11.8 11.8h411v411l-411 0.01v-411z"
+       id="path5" />
+    <path
+       stroke="#448"
+       d="m489 11.7h415v411h-415v-411z"
+       id="path6" />
+  </g>
+  <path
+     d="m876 244c-12 115-133 120-366 121-6-14-10-40-3-43 76-37.3 136-106 152-218 38 48 209 101 217 140z"
+     fill="url(#a)"
+     id="path7" />
+  <g
+     id="RasterLarge"
+     transform="matrix(1.36,0,0,1.28,-161,-636)"
+     style="mix-blend-mode:multiply">
+    <path
+       fill="#8585cb"
+       d="m 287,730 h -30 v -60 h 20 v 20 h 10 v 10 h 10 v 10 h 20 v 10 h 40 v -10 h 20 v -20 h 10 v -20 h -10 v -10 h -10 v -10 h -40 v -10 h -30 v -10 h -20 v -10 h -10 v -10 h -10 v -60 h 10 v -10 h 10 v -10 h 10 v -10 h 90 v 10 h 30 v 60 h -20 v -10 h -10 v -20 h -10 v -10 h -20 v -10 h -30 v 10 h -20 v 10 h -10 v 20 h 10 v 20 h 30 v 10 h 30 v 10 h 30 v 10 h 10 v 10 h 10 v 10 h 10 v 60 h -10 v 10 h -10 v 10 h -10 v 10 H 287 Z"
+       id="path8" />
+    <path
+       fill="#343483"
+       d="m 297,730 h -30 v -10 h -10 v -50 h 20 v 20 h 10 v 20 h 10 10 v 10 h 60 v -10 h 10 v -10 h 10 v -40 h -20 v -10 h -20 v -10 h -40 v -10 h -20 v -10 h -20 v -20 h -10 v -50 h 10 v -10 h 10 v -10 h 20 v -10 h 70 v 10 h 30 v 10 h 10 v 50 h -20 v -20 h -10 v -20 h -20 v -10 h -50 v 10 h -10 v 10 h -10 v 30 h 10 v 10 h 20 v 10 h 30 v 10 h 30 v 10 h 20 v 10 h 10 v 10 h 10 v 50 h -10 v 20 h -10 v 10 h -20 v 10 h -80 z"
+       id="path9" />
+    <path
+       fill="#000055"
+       d="m 307,730 h -30 v -10 h -20 v -50 h 20 v 30 h 10 v 10 h 10 v 10 h 70 v -10 h 20 v -50 h -10 v -10 h -20 v -10 h -40 v -10 h -30 v -10 h -10 v -10 h -10 v -20 h -10 v -30 h 10 v -20 h 20 v -10 h 20 v -10 h 50 v 10 h 30 v 10 h 20 v 50 h -20 v -30 h -10 v -10 h -10 v -10 h -70 v 10 h -10 v 40 h 10 v 10 h 10 v 10 h 30 v 10 h 40 v 10 h 20 v 10 h 10 v 20 h 10 v 40 h -10 v 20 h -20 v 10 h -30 v 10 h -50 z"
+       id="path10" />
+  </g>
+  <g
+     font-family="sans-serif"
+     text-anchor="middle"
+     id="g14">
+    <g
+       font-size="100"
+       id="g11">
+      <switch
+         transform="translate(210,518)"
+         fill="#338"
+         id="switch10">
+        <text
+           systemlanguage="ru"
+           id="trsvg14-fr"
+           systemLanguage="fr"><tspan
+             id="trsvg4-fr">Matrice</tspan></text>
+        <text
+           systemlanguage="en"
+           id="trsvg11"><tspan
+             id="trsvg1">Raster</tspan></text>
+        <text
+           systemlanguage="mk"
+           id="trsvg12"><tspan
+             id="trsvg2">Растер</tspan></text>
+        <text
+           systemlanguage="fr"
+           id="trsvg13"><tspan
+             id="trsvg3">Matriciel</tspan></text>
+        <text
+           systemlanguage="ru"
+           id="trsvg14"><tspan
+             id="trsvg4">Растр</tspan></text>
+      </switch>
+      <switch
+         transform="translate(695,518)"
+         fill="#338"
+         id="switch11">
+        <text
+           systemlanguage="ru"
+           id="trsvg18-fr"
+           systemLanguage="fr"><tspan
+             id="trsvg8-fr">Vecteur</tspan></text>
+        <text
+           systemlanguage="en"
+           id="trsvg15"><tspan
+             id="trsvg5">Vector</tspan></text>
+        <text
+           systemlanguage="mk"
+           id="trsvg16"><tspan
+             id="trsvg6">Вектор</tspan></text>
+        <text
+           systemlanguage="fr"
+           id="trsvg17"><tspan
+             id="trsvg7">Vectoriel</tspan></text>
+        <text
+           systemlanguage="ru"
+           id="trsvg18"><tspan
+             id="trsvg8">Вектор</tspan></text>
+      </switch>
+    </g>
+    <g
+       font-size="40"
+       id="g13">
+      <switch
+         id="switch12">
+        <text
+           y="563"
+           x="210"
+           id="trsvg19"
+           fill="#338"><tspan
+             id="trsvg9">GIF, JPEG, PNG</tspan></text>
+      </switch>
+      <switch
+         id="switch13">
+        <text
+           y="563"
+           x="695"
+           fill="#338"
+           id="trsvg20"><tspan
+             id="trsvg10">SVG</tspan></text>
+      </switch>
+    </g>
+  </g>
+  <path
+     id="VectorLarge"
+     fill="#005"
+     d="m661 294v-62.5l23.4 0.184c0.678 20.8 7.32 36.3 19.9 46.4 12.7 9.93 32.1 14.9 57.9 14.9 24.1 0 42.5-4.29 55.1-12.9 12.7-8.71 19.1-21.3 19.1-37.9 0-13.2-3.86-23.4-11.6-30.5-7.59-7.11-23.7-14-48.4-20.8l-40.1-10.9c-29-7.97-49.5-17.9-61.4-29.8-11.8-11.9-17.7-28.2-17.7-48.9 0-23.3 9.15-41.4 27.4-54.3 18.3-12.9 44-19.3 77.1-19.3 14.1 0 29.6 1.41 46.4 4.23 16.8 2.7 34.7 6.68 53.7 12v58.5h-23c-2.3-19.4-9.49-33.4-21.6-41.9-11.9-8.71-30.2-13.1-54.7-13.1-21.4 0-37.7 3.99-49 12-11.1 7.85-16.7 19.3-16.7 34.4 0 13.1 4.2 23.4 12.6 30.9 8.4 7.48 26.2 14.9 53.5 22.3l37.6 10.1c27.5 7.48 47.1 17 58.8 28.7 11.8 11.5 17.7 27 17.7 46.5 0 26.6-9.42 46.7-28.3 60.2s-46.9 20.2-84.2 20.2c-16.7 0-33.7-1.53-51-4.6-18-3-35-7-53-13z" />
+  <use
+     xlink:href="#VectorLarge"
+     transform="matrix(.17 0 0 .17 392 313)"
+     id="use14" />
+  <use
+     xlink:href="#RasterLarge"
+     transform="matrix(.173 0 0 .173 -8.25 314)"
+     height="100%"
+     width="100%"
+     y="0"
+     x="0"
+     id="use15" />
+</svg>
