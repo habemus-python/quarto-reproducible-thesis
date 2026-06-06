@@ -1,5 +1,6 @@
 00693C
 1E1E1E
+BibLaTeX
 A71930
 figsize
 fontsize
@@ -342,3 +343,8 @@ ip
 json
 pkl
 tbl
+utf8
+wb
+Cfaerber
+Yug
+Inkscape
