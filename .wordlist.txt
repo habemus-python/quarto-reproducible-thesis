@@ -338,3 +338,10 @@ wb
 Cfaerber
 Yug
 Inkscape
+LANCZOS
+Lanczos
+PIL
+dst
+kwargs
+lossily
+newpage
