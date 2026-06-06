@@ -332,3 +332,13 @@ własnym
 własną
 zastąpić
 zawartość
+DataFrame
+csv
+dataframe
+df
+dict
+exe
+ip
+json
+pkl
+tbl
