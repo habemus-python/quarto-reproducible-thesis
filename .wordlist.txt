@@ -348,3 +348,4 @@ wb
 Cfaerber
 Yug
 Inkscape
+IPython
