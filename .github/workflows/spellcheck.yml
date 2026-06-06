@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v6
       - run: pip install nbconvert ipykernel
       - run: python -m nbconvert --to markdown *.ipynb
-      - uses: rojopolis/spellcheck-github-actions@0.54.0
+      - uses: rojopolis/spellcheck-github-actions@0.60.0
         with:
           spell_checker: hunspell
 
