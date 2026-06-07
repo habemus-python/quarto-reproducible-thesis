@@ -338,3 +338,6 @@ wb
 Cfaerber
 Yug
 Inkscape
+NumPy
+dtype
+gzip
