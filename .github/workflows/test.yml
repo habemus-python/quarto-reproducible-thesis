@@ -12,6 +12,10 @@ on:
     branches: [ main ]
     paths-ignore:
       - README.md
+    tags:
+      - "*"
+    branches:
+      - main
   pull_request:
     branches: [ main ]
     paths-ignore:
@@ -58,3 +62,5 @@ jobs:
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
 
+      - name: Setup headless display
+        uses: pyvista/setup-headless-display-action@v3
