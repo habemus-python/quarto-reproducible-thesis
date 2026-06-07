@@ -338,3 +338,5 @@ wb
 Cfaerber
 Yug
 Inkscape
+schemdraw
+Schemdraw
