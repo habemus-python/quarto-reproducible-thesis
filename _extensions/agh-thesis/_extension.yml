@@ -34,7 +34,7 @@ contributes:
         \definecolor{aghblack}{HTML}{1E1E1E}
         \definecolor{aghred}{HTML}{A71930}
         \linespread{1.25}
-        \renewcommand*{\bibfont}{\secondarysize}
+        \AtBeginDocument{\renewcommand*{\bibfont}{\secondarysize}}
         \preto\section{\clearpage}
         \newcommand{\techword}[1]{{\normalfont\textsc{#1}}}
         \let\oldtableofcontents\tableofcontents
