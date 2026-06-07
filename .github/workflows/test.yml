@@ -46,6 +46,9 @@ jobs:
           cd test-project
           quarto use template .. --no-prompt
 
+      - name: Setup headless display
+        uses: pyvista/setup-headless-display-action@v3
+
       - name: Render example notebook to PDF
         working-directory: test-project
         run: |
@@ -61,6 +64,3 @@ jobs:
         with: 
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
-
-      - name: Setup headless display
-        uses: pyvista/setup-headless-display-action@v3
