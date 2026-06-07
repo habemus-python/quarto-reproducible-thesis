@@ -10,8 +10,9 @@ This template aims to (by design!):
 - <span class="emoji">🔗</span> orchestrate clickable hyperlinks (incl. to the bibliography and from there to the citing locations),
 - <span class="emoji">💻</span> offer code listings with syntax-highlighting,
 - <span class="emoji">🌍</span> handle multi-lingual content (Polish letters, etc),
-- <span class="emoji">📑</span> exemplify a robust bibliography setup,
-- <span class="emoji">📐</span> provide reasonable defaults for line spacing, font sizes, margins, etc.
+- <span class="emoji">📑</span> exemplify a robust BibLaTeX-based bibliography setup,
+- <span class="emoji">📐</span> provide reasonable defaults for line spacing, font sizes, margins, etc.,
+- <span class="emoji">🐧🍏🪟</span> rely on tools available on all popular systems.
 
 ## <span class="emoji">🚀</span> How to use it
 
@@ -36,23 +37,23 @@ To get information on how to install Quarto, [read the friendly manual](https://
 
 The template requires `quarto` to be executed in an environment with the following tools available (in `$PATH`):
 - [Jupyter](https://jupyter.org/) and some common Python packages:
-   * using `pip`: `pip install jupyter matplotlib pyyaml nbformat nbclient`
-   * on Debian/Ubuntu using APT: `apt-get install jupyter python3-matplotlib python3-yaml`
+   * 🐍 using `pip`: `pip install jupyter matplotlib pyyaml nbformat nbclient`
+   * 🐧 on Debian/Ubuntu using APT: `apt-get install jupyter python3-matplotlib python3-yaml`
 - [LuaTeX](https://en.wikipedia.org/wiki/LuaTeX) and several [LaTeX packages](https://ctan.org/):
-   * on Debian/Ubuntu using APT: `apt-get install texlive-luatex texlive-latex-recommended texlive-lang-polish texlive-latex-extra`
-   * on macOS using Homebrew: `brew install texlive`
-   * on Linux/macOS/Windows using Quarto: `quarto install tinytex` (optionally with the `--update-path` option to augment `$PATH`)
+   * 🐧 on Debian/Ubuntu using APT: `apt-get install texlive-luatex texlive-latex-recommended texlive-lang-polish texlive-latex-extra`
+   * 🍏 on macOS using Homebrew: `brew install texlive`
+   * 🪟 on Linux/macOS/Windows using Quarto: `quarto install tinytex` (optionally with the `--update-path` option to augment `$PATH`)
 - [Biber](https://en.wikipedia.org/wiki/Biber_(LaTeX)):
-   * on Debian/Ubuntu using APT: `apt-get install biber`
-   * on macOS using Homebrew: `brew install biber`
-- [Biblatex](https://biblatex.org/):
-   * on Debian/Ubuntu using APT: `apt-get install texlive-bibtex-extra`  
+   * 🐧 on Debian/Ubuntu using APT: `apt-get install biber`
+   * 🍏 on macOS using Homebrew: `brew install biber`
+- [BibLaTeX](https://biblatex.org/):
+   * 🐧 on Debian/Ubuntu using APT: `apt-get install texlive-bibtex-extra`  
 - [rsvg-convert](https://en.wikipedia.org/wiki/Librsvg):
-   * on Debian/Ubuntu using APT: `apt-get install librsvg2-bin`
-   * on macOS using Homebrew: `brew install librsvg`
-   * on Windows using Chocolatey: `choco install rsvg-convert`
+   * 🐧 on Debian/Ubuntu using APT: `apt-get install librsvg2-bin`
+   * 🍏 on macOS using Homebrew: `brew install librsvg`
+   * 🪟 on Windows using Chocolatey: `choco install rsvg-convert`
 
-The above installation steps are tested on CI with [this workflow](https://github.com/habemus-python/quarto-reproducible-thesis/blob/main/.github/workflows/test.yml).
+The above installation steps are CI-tested on 🐧 Linux, 🍏 macOS and 🪟 Windows with [this workflow](https://github.com/habemus-python/quarto-reproducible-thesis/blob/main/.github/workflows/test.yml).
 
 ## <span class="emoji">🛠️</span> Notes for contributors
 
@@ -60,6 +61,8 @@ The above installation steps are tested on CI with [this workflow](https://githu
 - [Quarto template docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template) 
 
 ## <span class="emoji">👥</span> Credits
+
+See GitHub <a href="https://github.com/habemus-python/quarto-reproducible-thesis/graphs/contributors?from=2%2F7%2F2026">Insights on project contributors</a>.
 
 Title page based on [Overleaf template](https://www.overleaf.com/latex/templates/praca-dyplomowa/kbwcrcmczypy) 
   by [Krzysztof Malarz](https://home.agh.edu.pl/~malarz/).

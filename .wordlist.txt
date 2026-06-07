@@ -1,5 +1,6 @@
 00693C
 1E1E1E
+BibLaTeX
 A71930
 figsize
 fontsize
@@ -333,3 +334,7 @@ własną
 zastąpić
 zawartość
 utf8
+wb
+Cfaerber
+Yug
+Inkscape
