@@ -366,3 +366,4 @@ tbl
 tempfile
 texttt
 17g
+RequestException
