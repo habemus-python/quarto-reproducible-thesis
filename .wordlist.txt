@@ -382,3 +382,17 @@ simplefilter
 textasciitilde
 texttt
 toggleable
+Krak
+Kraków
+Mapnik
+OSM
+Popup
+UST
+WGS84
+crs
+emph
+folium
+krakow
+osmnx
+popup
+viridis
