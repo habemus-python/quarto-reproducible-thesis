@@ -368,3 +368,15 @@ int
 layer1
 params
 utils
+ax
+cbar
+colors
+featuremap
+len
+linalg
+ndimage
+pos
+recognized
+RuntimeWarning
+scipy
+viridis
