@@ -15,7 +15,7 @@ This template aims to (by design!):
 - <span class="emoji">🐧🍏🪟</span> rely on tools available on all popular systems.
 
 ## <span class="emoji">🚀</span> How to use it
-
+veator https://nieistnieje.con
 To start a new project, execute `quarto use template habemus-python/quarto-reproducible-thesis`.
 
 To render it to a pdf, do: `quarto render` (or `quarto render thesis.ipynb`).
