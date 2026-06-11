@@ -399,3 +399,11 @@ xy
 xycoords
 xytext
 ylim
+IndexError
+Sankeya
+Wykres
+przez
+przyczynowo
+renderowany
+sankey
+skutkowy
