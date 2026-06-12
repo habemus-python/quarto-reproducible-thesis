@@ -407,3 +407,9 @@ przyczynowo
 renderowany
 sankey
 skutkowy
+IPython
+kaleido
+radar1
+radar2
+sankey1
+sankey2
