@@ -384,3 +384,12 @@ webhooks
 yml
 MkDocs
 docstrings
+Martyna
+amd64
+conf
+cp
+dpkg
+linux
+mkdir
+py
+sudo
