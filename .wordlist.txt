@@ -395,3 +395,4 @@ py
 sudo
 Win64
 iter
+ThesisAutomation
