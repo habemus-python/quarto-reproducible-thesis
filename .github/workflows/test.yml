@@ -30,6 +30,7 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v6
+      - uses: mxschmitt/action-tmate@v3
 
       - name: Set up env
         uses: ./.github/actions/setup-env
@@ -38,7 +39,7 @@ jobs:
 
       - name: Test template installation
         run: |
-          mkdir test-project 
+          mkdir test-project
           cd test-project
           quarto use template .. --no-prompt
 
@@ -49,12 +50,13 @@ jobs:
           quarto ${{ matrix.quarto_args }}
 
       - name: Rename PDF (platform-specific)
-        run: | 
-          mv test-project/thesis.pdf example-${{ matrix.os }}.pdf 
+        run: |
+          mv test-project/thesis.pdf example-${{ matrix.os }}.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v7
-        with: 
+        with:
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
+
 
