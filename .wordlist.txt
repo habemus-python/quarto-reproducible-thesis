@@ -389,3 +389,8 @@ został
 źródłowego
 źródłowym
 że
+text
+caption
+label
+longtable
+tbl
