@@ -1,2 +1,8 @@
 project:
   title: "" # the title is defined in thesis.ipynb
+
+format:
+  agh-thesis-pdf:
+    include-in-header:
+      text: |
+        \usepackage{float}
