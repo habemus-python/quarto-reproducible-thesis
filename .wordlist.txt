@@ -393,4 +393,5 @@ text
 caption
 label
 longtable
-tbl
+tblrefstepcounter
+thetable
