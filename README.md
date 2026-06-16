@@ -6,6 +6,7 @@ This template aims to (by design!):
 - <span class="emoji">📦</span> encapsulate all components of a BEng/MSc thesis into a single Jupyter/Python notebook,
 - <span class="emoji">✏️ </span> leverage the best of Markdown and LaTeX for hassle-free quality typesetting,
 - <span class="emoji">🔄</span> automate generation of plots, tables and in-text numerical values,
+- <span class="emoji">📏</span> promote reproducible handling of magic numbers, constants and units,
 - <span class="emoji">📈</span> enforce vector graphics for matplotlib plots,
 - <span class="emoji">🔗</span> orchestrate clickable hyperlinks (incl. to the bibliography and from there to the citing locations),
 - <span class="emoji">💻</span> offer code listings with syntax-highlighting,
