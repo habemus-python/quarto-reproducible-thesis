@@ -370,3 +370,4 @@ Yug
 Inkscape
 schemdraw
 Schemdraw
+Szeptuch
