@@ -370,3 +370,10 @@ str
 tt
 usepackage
 utf
+AppData
+CTAN
+com
+pathsep
+setname
+stackexchange
+tex
