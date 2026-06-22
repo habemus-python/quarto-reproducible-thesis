@@ -14,5 +14,5 @@ repos:
      - id: nbqa-isort
        additional_dependencies: [isort==8.0.1]
      - id: nbqa-pylint
-       additional_dependencies: [pylint==4.0.5]
+       additional_dependencies: [pylint==4.0.6]
        args: ["--disable=missing-module-docstring,import-error,wrong-import-position,wrong-import-order,ungrouped-imports"]
