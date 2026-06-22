@@ -407,3 +407,5 @@ pathsep
 setname
 stackexchange
 tex
+Zofia
+Jedlińska
