@@ -14,6 +14,7 @@ KMa
 MKr
 MLa
 MOr
+Mariusz
 MSh
 MSz
 MWą
@@ -27,6 +28,7 @@ SCi
 SMa
 WBa
 WOc
+Wątroba
 ZJe
 00693C
 1E1E1E
@@ -368,6 +370,17 @@ wb
 Cfaerber
 Yug
 Inkscape
+AVG
+DESC
+Pandoc
+describeListing
+dir
+exe
+javascript
+jq
+json
+sql
+sqlfluff
 AVG
 DESC
 Pandoc
