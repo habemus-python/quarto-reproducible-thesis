@@ -365,3 +365,10 @@ xlabel
 ylabel
 1f
 val
+cb
+colorbar
+hb
+loc
+ncol
+subcap
+visualizations
