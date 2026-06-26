@@ -5,7 +5,8 @@ BAm
 BWę
 DFo
 FBę
-FMa
+Filip
+Matracki
 GAd
 IHe
 JPa
@@ -368,3 +369,11 @@ wb
 Cfaerber
 Yug
 Inkscape
+LANCZOS
+Lanczos
+PIL
+dst
+kwargs
+lossily
+newpage
+px
