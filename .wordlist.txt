@@ -409,3 +409,16 @@ stackexchange
 tex
 Zofia
 Jedlińska
+IPython
+MusiX
+TemporaryDirectory
+copy2
+cwd
+hashlib
+hexdigest
+sha1
+shutil
+tempfile
+textrightarrow
+tmp
+tmpdir
