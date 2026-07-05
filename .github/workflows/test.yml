@@ -35,10 +35,6 @@ jobs:
         uses: ./.github/actions/setup-env
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Install LaTeX science packages (Ubuntu only)
-        if: runner.os == 'Linux'
-        run: sudo apt-get update && sudo apt-get install -y texlive-science
 
       - name: Test template installation
         run: |
