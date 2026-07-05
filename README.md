@@ -63,8 +63,6 @@ The above installation steps are CI-tested on 🐧 Linux, 🍏 macOS and 🪟 Wi
 - [pre-commit documentation](https://pre-commit.com/#3-install-the-git-hook-scripts)
 - [Quarto template docs](https://quarto.org/docs/extensions/starter-templates.html#using-a-template)
 
-Handbook topics covered by contributor sections include: **versioning**, **git-metadata**, **setuptools_scm**, **automation**, and **semver**.
-
 ## <span class="emoji">👥</span> Credits
 
 See GitHub <a href="https://github.com/habemus-python/quarto-reproducible-thesis/graphs/contributors?from=2%2F7%2F2026">Insights on project contributors</a>.
