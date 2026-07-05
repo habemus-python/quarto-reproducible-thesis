@@ -26,6 +26,7 @@ contributes:
       header-includes: |
         \usepackage{polski,graphicx,epigraph,xcolor,etoolbox,abstract}
         \usepackage[english,polish]{babel}
+        \usepackage[version=4]{mhchem}
         \usepackage[utf8]{inputenc}
         \usepackage[a4paper, top=2cm, bottom=2cm, inner=2cm, outer=2cm, bindingoffset=1cm, twoside]{geometry}
         \renewcommand{\abstracttextfont}{\small}  
