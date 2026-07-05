@@ -1,0 +1,25 @@
+{
+  "version": "0.2",
+  "language": "en,pl",
+  "words": [
+    "titlepage",
+    "matplotlib",
+    "habemus",
+    "pyyaml",
+    "nbformat",
+    "nbclient",
+    "texlive",
+    "luatex",
+    "tinytex",
+    "Biber",
+    "biber",
+    "bibtex",
+    "rsvg",
+    "librsvg",
+    "MusiXTeX",
+    "choco",
+    "Krzysztof",
+    "Malarz"
+  ],
+  "flagWords": []
+}
