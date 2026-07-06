@@ -12,10 +12,10 @@ jobs:
   spellcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - run: pip install nbconvert ipykernel
       - run: python -m nbconvert --to markdown *.ipynb
-      - uses: rojopolis/spellcheck-github-actions@0.60.0
+      - uses: rojopolis/spellcheck-github-actions@0.62.0
         with:
           spell_checker: hunspell
 

@@ -1,7 +1,1 @@
 jupyter
-jupyter
-matplotlib
-folium
-osmnx
-geopandas
-contextily
