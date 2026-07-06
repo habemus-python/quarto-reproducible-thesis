@@ -1,1 +1,4 @@
 jupyter
+plotly
+pandas
+kaleido
