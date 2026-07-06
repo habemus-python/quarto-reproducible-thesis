@@ -16,7 +16,6 @@ runs:
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
           python -m pip install nbformat nbclient pyyaml
-          plotly_get_chrome -y
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
