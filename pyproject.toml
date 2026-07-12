@@ -1,2 +1,4 @@
 [tool.black]
 line-length = 70 # force to wrap lines and make them display well in PDFs
+[tool.isort]
+profile = "black"

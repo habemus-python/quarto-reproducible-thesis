@@ -1,4 +1,1 @@
 jupyter
-scipy
-pint
-CoolProp
