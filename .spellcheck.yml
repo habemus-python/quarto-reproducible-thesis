@@ -7,9 +7,14 @@ matrix:
       - .wordlist.txt
     encoding: utf-8
   pipeline:
+    - pyspelling.filters.markdown:
+        markdown_extensions:
+          - markdown.extensions.fenced_code
     - pyspelling.filters.html:
         comments: false
         ignores:
+          - pre
+          - code
           - span.emoji
   sources:
     - '*.md' 

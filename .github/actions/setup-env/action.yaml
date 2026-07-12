@@ -19,16 +19,45 @@ runs:
       - name: Install Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install Quarto Chrome headless shell
+        shell: bash
+        run: quarto install chrome-headless-shell
+
       - name: Install LaTeX, ImageMagick and rsvg (Linux)
         if: runner.os == 'Linux'
         shell: bash
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-luatex librsvg2-bin biber texlive-bibtex-extra texlive-latex-recommended texlive-latex-extra texlive-lang-polish imagemagick
+          sudo apt-get install -y \
+            texlive-luatex \
+            texlive-bibtex-extra \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-lang-polish \
+            texlive-music \
+            texlive-extra-utils \
+            texlive-science \
+            librsvg2-bin \
+            biber \
+            imagemagick
 
       - name: Install TinyTeX (macOS & Windows)
         if: runner.os == 'macOS' || runner.os == 'Windows'
         uses: r-lib/actions/setup-tinytex@v2
+
+      - name: Install MusiXTeX/PMX into TinyTeX + Ghostscript (macOS)
+        if: runner.os == 'macOS'
+        shell: bash
+        run: |
+          brew install ghostscript
+          tlmgr install musixtex musixtex-fonts pmx pdfcrop
+
+      - name: Install MusiXTeX/PMX into TinyTeX + Ghostscript (Windows)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          choco install ghostscript -y
+          tlmgr install musixtex musixtex-fonts pmx pdfcrop
       
       - name: Install rsvg (macOS)
         if: runner.os == 'macOS'
