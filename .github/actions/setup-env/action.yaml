@@ -50,6 +50,7 @@ runs:
         shell: bash
         run: |
           brew install ghostscript
+          tlmgr update --self
           tlmgr install musixtex musixtex-fonts pmx pdfcrop
 
       - name: Install MusiXTeX/PMX into TinyTeX + Ghostscript (Windows)
