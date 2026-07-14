@@ -29,7 +29,7 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Set up env
         uses: ./.github/actions/setup-env
@@ -41,6 +41,9 @@ jobs:
           mkdir test-project 
           cd test-project
           quarto use template .. --no-prompt
+
+      - name: Setup headless display
+        uses: pyvista/setup-headless-display-action@v4
 
       - name: Render example notebook to PDF
         working-directory: test-project
@@ -57,4 +60,3 @@ jobs:
         with: 
           name: pdf-${{ matrix.os }}
           path: example-${{ matrix.os }}.pdf
-
