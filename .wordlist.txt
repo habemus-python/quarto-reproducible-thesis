@@ -538,6 +538,12 @@ wb
 Cfaerber
 Yug
 Inkscape
+UnitRegistry
+ax
+pos
+ureg
+var
+ylabel
 Lua
 lua
 LuaLaTeX
