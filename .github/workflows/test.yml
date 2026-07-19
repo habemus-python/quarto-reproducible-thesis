@@ -42,9 +42,6 @@ jobs:
           cd test-project
           quarto use template .. --no-prompt
 
-      - name: Setup headless display
-        uses: pyvista/setup-headless-display-action@v4
-
       - name: Render example notebook to PDF
         working-directory: test-project
         run: |

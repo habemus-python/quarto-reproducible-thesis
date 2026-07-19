@@ -23,6 +23,9 @@ runs:
         shell: bash
         run: quarto install chrome-headless-shell
 
+      - name: Setup PyVista headless display
+        uses: pyvista/setup-headless-display-action@v4
+
       - name: Install LaTeX, ImageMagick and rsvg (Linux)
         if: runner.os == 'Linux'
         shell: bash
