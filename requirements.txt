@@ -1,1 +1,2 @@
+# everything else is installed via a `pip install ...` cell in the notebook
 jupyter
