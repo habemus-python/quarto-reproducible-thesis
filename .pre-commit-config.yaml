@@ -12,7 +12,7 @@ repos:
      - id: nbqa-pyupgrade
        additional_dependencies: [pyupgrade==3.21.2]
      - id: nbqa-isort
-       additional_dependencies: [isort==8.0.1]
+       additional_dependencies: [isort==9.0.1]
      - id: nbqa-pylint
        additional_dependencies: [pylint==4.0.6]
        args: ["--disable=missing-module-docstring,import-error,wrong-import-position,wrong-import-order,ungrouped-imports,too-many-lines"]
