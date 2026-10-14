@@ -10,7 +10,7 @@ repos:
        additional_dependencies: [black==26.5.1]
        args: ["--skip-string-normalization"]
      - id: nbqa-pyupgrade
-       additional_dependencies: [pyupgrade==3.21.2]
+       additional_dependencies: [pyupgrade==3.22.0]
      - id: nbqa-isort
        additional_dependencies: [isort==8.0.1]
      - id: nbqa-pylint
