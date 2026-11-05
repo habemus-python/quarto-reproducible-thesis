@@ -48,11 +48,6 @@ runs:
         if: runner.os == 'macOS' || runner.os == 'Windows'
         uses: r-lib/actions/setup-tinytex@v2
 
-      - name: Update tlmgr (macOS & Windows)
-        if: runner.os == 'macOS' || runner.os == 'Windows'
-        shell: bash
-        run: tlmgr update --self
-
       - name: Install MusiXTeX/PMX into TinyTeX + Ghostscript (macOS)
         if: runner.os == 'macOS'
         shell: bash
@@ -66,6 +61,7 @@ runs:
         shell: pwsh
         run: |
           choco install ghostscript -y
+          tlmgr update --self
           tlmgr install musixtex musixtex-fonts pmx pdfcrop
       
       - name: Install rsvg (macOS)
