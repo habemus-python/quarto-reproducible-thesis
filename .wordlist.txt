@@ -1035,3 +1035,5 @@ tmpdir
 schemdraw
 Schemdraw
 Szeptuch
+Adamus
+Gracjan
