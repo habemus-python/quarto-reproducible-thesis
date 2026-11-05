@@ -61,6 +61,7 @@ runs:
         shell: pwsh
         run: |
           choco install ghostscript -y
+          tlmgr update --self
           tlmgr install musixtex musixtex-fonts pmx pdfcrop
       
       - name: Install rsvg (macOS)
