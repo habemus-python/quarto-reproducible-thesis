@@ -56,3 +56,7 @@ contributes:
 
       format-resources:
         - logo_AGH.pdf
+        - AI_poziom_0.pdf
+        - AI_poziom_1.pdf
+        - AI_poziom_2.pdf
+        - AI_poziom_3.pdf
