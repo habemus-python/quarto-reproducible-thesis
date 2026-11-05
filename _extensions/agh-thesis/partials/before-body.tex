@@ -30,7 +30,12 @@ Opiekun pracy: & $advisor$\\
 \clearpage
 \thispagestyle{empty}
 
-\ifcase $ai-usage$
+\ifcase$if(ai-usage)$
+    $ai-usage$
+$else$
+    -1 % enforce default block
+$endif$
+
     \includegraphics[width=.3\textwidth]{AI_poziom_0.pdf}
 \or
     \includegraphics[width=.3\textwidth]{AI_poziom_1.pdf}
