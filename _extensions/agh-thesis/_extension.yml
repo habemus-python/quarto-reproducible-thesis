@@ -26,6 +26,8 @@ contributes:
       bibliography: refs.bib
 
       header-includes: |
+        \usepackage[version=4]{mhchem}
+        \usepackage{needspace}
         \usepackage{graphicx,epigraph,xcolor,etoolbox,abstract}
         \renewcommand{\abstracttextfont}{\small}  
 
