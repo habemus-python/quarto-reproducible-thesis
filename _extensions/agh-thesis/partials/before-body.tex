@@ -1,30 +1,28 @@
 \thispagestyle{empty}
 \begin{center}
 
-\includegraphics[width=\textwidth]{logo_AGH.pdf}\\[5mm]
+\includegraphics[width=\textwidth]{logo_AGH.pdf}\\%[5mm]
 
-{\bf{\sf $faculty$}}\\[5mm]
-{\bf{\sf $department$}}\\[14mm]
+{\textbf{\textsf $faculty$}}\\[5mm]
+{\textbf{\textsf $department$}}\\[14mm]
 
-{\sf{\huge $thesis-type$}}\\[12mm]
+{\textsf{\huge $thesis-type$}}\\[12mm]
 
-{\sf{\Large $title$}}\\[12mm]
-{\sf{\Large $title-pl$}}\\[30mm]
+{\textsf{\Large $title-pl$}}\\[2mm]
+{\textsf{\Large $title-en$}}\\[40mm]
 
 \end{center}
 
-{\sf
+{\sffamily
 \begin{tabular}{ll}
 Autor: & $author$\\
 Kierunek studiów: & $program$\\
 Opiekun pracy: & $advisor$\\
 \end{tabular}
-}
-
-\vspace*{\fill}
+}\\[10mm]
 
 \begin{center}
-{\sf Kraków, \the\year}
+{\textsf Kraków, \the\year}
 \end{center}
 
 \clearpage
@@ -39,9 +37,9 @@ $endif$
     \includegraphics[width=.3\textwidth]{AI_poziom_0.pdf}
 \or
     \includegraphics[width=.3\textwidth]{AI_poziom_1.pdf}
-\or 
+\or
     \includegraphics[width=.3\textwidth]{AI_poziom_2.pdf}
-\or 
+\or
     \includegraphics[width=.3\textwidth]{AI_poziom_3.pdf}
 \else
     \relax
@@ -51,10 +49,11 @@ $endif$
 \vspace*{\fill}
 
 \noindent
-{\secondarysize 
+{\small
   This work is licensed under the\\
   \href{$license-url$}{$license-type$}\\
-  Authors: $colophon-authors$  
+  Authors: $colophon-authors$
 }
+
 
 \clearpage
